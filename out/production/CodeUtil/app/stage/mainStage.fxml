@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.Controller">
+   <children>
+      <SplitPane dividerPositions="0.2080856123662307" prefHeight="373.0" prefWidth="692.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="1.0" layoutY="-39.0" prefHeight="543.0" prefWidth="101.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#buttonDCJM" prefHeight="80.0" prefWidth="500.0" text="对称加密">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#buttonGKJM" prefHeight="80.0" prefWidth="500.0" text="公开加密">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" onAction="#buttonSL" prefHeight="80.0" prefWidth="500.0" text="散列算法">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="500.0" text="数字签名">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="500.0" text="散列表">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Button>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                <AnchorPane fx:id="dcjm" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TabPane prefHeight="459.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="D E S">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="504.0" prefWidth="606.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_1" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_2" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#desEncrypt1" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D E S 加 密 区 1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_3" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#desDecrypt1" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_5" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_4" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D E S 解 密 区1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_6" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="D E S 2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_25" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_26" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#desEncrypt2" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D E S 加 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_27" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#desDecrypt2" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_29" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_28" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D E S 解 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_30" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="A E S">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_7" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_8" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#aesEncrypt1" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A E S 加 密 区 1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_9" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#aesDecrypt1" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_11" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_10" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A E S 解 密 区 1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_12" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="A E S 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" layoutX="158.0" layoutY="37.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_13" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_14" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#aesEncrypt2" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A E S 加 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_15" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#aesDecrypt2" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_17" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_16" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A E S 解 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_18" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="I D E A 1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" layoutX="234.0" layoutY="129.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_19" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0" promptText="这个算法可以不输入密钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_20" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#ideaEncrypt1" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I D E A 加 密 区 1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_21" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#ideaDecrypt1" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_23" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_22" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I D A E 解 密 区 1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_24" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="I D E A 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des1_191" layoutX="138.0" layoutY="25.0" prefHeight="40.0" prefWidth="470.0" promptText="这个算法可以不输入密钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_201" layoutX="138.0" layoutY="82.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="52.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button layoutX="556.0" layoutY="201.0" mnemonicParsing="false" onAction="#ideaEncrypt1" prefHeight="35.0" prefWidth="80.0" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I D E A 加 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_211" layoutX="138.0" layoutY="142.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="559.0" layoutY="202.0" mnemonicParsing="false" onAction="#ideaDecrypt1" prefHeight="36.0" prefWidth="80.0" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="49.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥：">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_231" layoutX="142.0" layoutY="85.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <TextArea fx:id="des1_221" layoutX="142.0" layoutY="28.0" prefHeight="35.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I D A E 解 密 区 2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des1_241" layoutX="142.0" layoutY="145.0" prefHeight="40.0" prefWidth="470.0">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="gkjm" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" visible="false">
+                     <children>
+                        <TabPane prefHeight="459.0" prefWidth="762.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="R S A 1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="504.0" prefWidth="606.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.350597609561753, 0.6752988047808764" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des2_2" layoutX="75.0" layoutY="66.0" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_1" layoutX="75.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Button layoutX="446.0" layoutY="127.0" mnemonicParsing="false" onAction="#randomKeyPair1" text="随机生成公钥与私钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="#0cff00" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RSA密钥生成">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="106.0" mnemonicParsing="false" onAction="#rsaEncrypt1" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="55.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_3" layoutX="116.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="455.0" />
+                                                      <TextArea fx:id="des2_4" layoutX="116.0" layoutY="53.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥加密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="115.0" mnemonicParsing="false" onAction="#rsaDecrypt1" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="57.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_5" layoutX="116.0" layoutY="18.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="57.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_6" editable="false" layoutX="116.0" layoutY="119.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥解密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="R S A 2">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.34462151394422313, 0.6713147410358565" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des2_8" layoutX="75.0" layoutY="66.0" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_7" layoutX="75.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Button layoutX="425.0" layoutY="127.0" mnemonicParsing="false" onAction="#randomKeyPair2" text="根据长度生成公钥与私钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="#0cff00" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RSA密钥生成">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="285.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥长度">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextField fx:id="des2_13" layoutX="357.0" layoutY="130.0" prefHeight="30.0" prefWidth="59.0" text="512" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="106.0" mnemonicParsing="false" onAction="#rsaEncrypt2" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="55.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_9" layoutX="116.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="455.0" />
+                                                      <TextArea fx:id="des2_10" layoutX="116.0" layoutY="53.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥加密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="115.0" mnemonicParsing="false" onAction="#rsaDecrypt2" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="57.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_11" layoutX="116.0" layoutY="18.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="57.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_12" layoutX="116.0" layoutY="119.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥解密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="E C C 1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.34063745019920316, 0.6792828685258964" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des2_15" layoutX="75.0" layoutY="66.0" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_14" layoutX="75.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Button layoutX="446.0" layoutY="127.0" mnemonicParsing="false" onAction="#randomKeyPair3" text="随机生成公钥与私钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="#0cff00" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECC密钥生成1">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <CheckBox disable="true" layoutX="369.0" layoutY="134.0" mnemonicParsing="false" selected="true" text="256位" />
+                                                      <Text layoutX="294.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥长度">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="106.0" mnemonicParsing="false" onAction="#eccEncrypt1" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="55.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_16" layoutX="116.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="455.0" />
+                                                      <TextArea fx:id="des2_17" layoutX="116.0" layoutY="53.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥加密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="115.0" mnemonicParsing="false" onAction="#eccDecrypt1" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="57.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_18" layoutX="116.0" layoutY="18.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="57.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_19" layoutX="116.0" layoutY="119.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥解密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="E C C 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.48406374501992033, 0.750996015936255" layoutX="158.0" layoutY="37.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des2_21" layoutX="82.0" layoutY="97.0" prefHeight="92.0" prefWidth="550.0" wrapText="true" />
+                                                      <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="14.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_20" layoutX="82.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="72.0" prefWidth="550.0" wrapText="true" />
+                                                      <Button layoutX="446.0" layoutY="202.0" mnemonicParsing="false" onAction="#randomKeyPair4" text="随机生成公钥与私钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="#0cff00" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECC密钥生成2">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="294.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥长度">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <CheckBox disable="true" layoutX="366.0" layoutY="210.0" mnemonicParsing="false" selected="true" text="256位" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="592.0" layoutY="77.0" mnemonicParsing="false" onAction="#eccEncrypt2" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="55.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_22" layoutX="116.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="455.0" wrapText="true" />
+                                                      <TextArea fx:id="des2_23" layoutX="116.0" layoutY="80.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="55.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥加密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="77.0" mnemonicParsing="false" onAction="#eccDecrypt2" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="57.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_24" layoutX="116.0" layoutY="32.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="57.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_25" layoutX="116.0" layoutY="81.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥解密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="E C C 3">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.34462151394422313, 0.6733067729083665" orientation="VERTICAL" prefHeight="504.0" prefWidth="662.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="des2_211" layoutX="75.0" layoutY="66.0" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_201" layoutX="75.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="550.0" wrapText="true" />
+                                                      <Button layoutX="446.0" layoutY="127.0" mnemonicParsing="false" onAction="#randomKeyPair4" text="随机生成公钥与私钥">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="#0cff00" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECC密钥生成3">
+                                                         <font>
+                                                            <Font size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text layoutX="294.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密钥长度">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <CheckBox disable="true" layoutX="368.0" layoutY="134.0" mnemonicParsing="false" selected="true" text="256位" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="106.0" mnemonicParsing="false" onAction="#eccEncrypt2" text="加密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="55.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_221" layoutX="116.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="455.0" />
+                                                      <TextArea fx:id="des2_231" layoutX="116.0" layoutY="53.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="RED" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="公钥加密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Button layoutX="586.0" layoutY="115.0" mnemonicParsing="false" onAction="#eccDecrypt2" text="解密">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text layoutX="57.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_241" layoutX="116.0" layoutY="18.0" prefHeight="90.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text layoutX="57.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextArea fx:id="des2_251" layoutX="116.0" layoutY="119.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="455.0" wrapText="true" />
+                                                      <Text fill="#1d00ff" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="私钥解密" wrappingWidth="35.0">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="slsf" prefHeight="200.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <TabPane prefHeight="543.0" prefWidth="662.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="M D 5_1">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="113.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD5加密理论上是一种不可逆的加密算法">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_1" layoutX="101.0" layoutY="66.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="29.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="29.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_2" layoutX="101.0" layoutY="245.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Button layoutX="506.0" layoutY="429.0" mnemonicParsing="false" onAction="#MD5_encrypt_1" prefHeight="45.0" prefWidth="95.0" text="加密">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <CheckBox fx:id="toUpper1" layoutX="409.0" layoutY="441.0" mnemonicParsing="false" text="toUpper" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="M D 5_2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <CheckBox fx:id="toUpper2" layoutX="412.0" layoutY="437.0" mnemonicParsing="false" text="toUpper" />
+                                          <Button layoutX="506.0" layoutY="425.0" mnemonicParsing="false" onAction="#MD5_encrypt_2" prefHeight="45.0" prefWidth="95.0" text="加密">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <TextArea fx:id="des3_4" layoutX="101.0" layoutY="244.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="29.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="29.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_3" layoutX="101.0" layoutY="67.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="113.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD5加密理论上是一种不可逆的加密算法">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="S H A 1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <CheckBox fx:id="toUpper4" layoutX="412.0" layoutY="437.0" mnemonicParsing="false" text="toUpper" />
+                                          <Button layoutX="506.0" layoutY="425.0" mnemonicParsing="false" onAction="#SHA1_encrypt_1" prefHeight="45.0" prefWidth="95.0" text="加密">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <TextArea fx:id="des3_8" layoutX="101.0" layoutY="244.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="29.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="29.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_7" layoutX="101.0" layoutY="67.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="127.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHA1加密理论上是一种不可逆的加密算法">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="MD5_SHA1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <CheckBox fx:id="toUpper3" layoutX="412.0" layoutY="437.0" mnemonicParsing="false" text="toUpper" />
+                                          <Button layoutX="506.0" layoutY="425.0" mnemonicParsing="false" onAction="#MD5_SHA_encrypt" prefHeight="45.0" prefWidth="95.0" text="加密">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <TextArea fx:id="des3_6" layoutX="101.0" layoutY="244.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="29.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="29.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_5" layoutX="101.0" layoutY="67.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="135.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="散列加密理论上是一种不可逆的加密算法">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <CheckBox fx:id="SHA1" layoutX="212.0" layoutY="437.0" mnemonicParsing="false" text="SHA1" />
+                                          <CheckBox fx:id="withSalt" layoutX="316.0" layoutY="437.0" mnemonicParsing="false" text="withSalt" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text=" CRC32">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <CheckBox fx:id="toUpper5" layoutX="412.0" layoutY="437.0" mnemonicParsing="false" text="toUpper" />
+                                          <Button layoutX="506.0" layoutY="425.0" mnemonicParsing="false" onAction="#CRC32_1" prefHeight="45.0" prefWidth="95.0" text="加密">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <TextArea fx:id="des3_10" layoutX="101.0" layoutY="244.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="29.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="29.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明文：">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="des3_9" layoutX="101.0" layoutY="67.0" prefHeight="150.0" prefWidth="500.0" />
+                                          <Text layoutX="17.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRC全称为Cyclic Redundancy Check，又叫循环冗余校验">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

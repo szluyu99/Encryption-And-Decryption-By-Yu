@@ -1,0 +1,13 @@
+#root {
+    -fx-border-width:2;-fx-border-color:#000;
+}
+
+#top {
+    -fx-background-color: #4A5459;
+}
+
+#winClose {
+    -fx-cursor:hand;
+}
+
+
